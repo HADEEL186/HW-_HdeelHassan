@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <style>
+
+      .toolbar {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      .toolbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 0;
+      }
+
+      .logo {
+
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <meta charset="UTF-8">
+    <title>TO contact</title>
+</head>
+<body>
+
+<div class="toolbar">
+   <div><a href="/">
+    <img   src="static/logo3.jpeg" alt="Web Logo"; class="imglogo" />
+    </a></div>
+      <div class="logo">Powerful women in Tech</div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="about_us">About</a>
+        <a href="contact">Contact</a>
+      </div>
+    </div>
+<div ><h2>Contact Us</h2>
+<p>Get in touch with us!</p>
+<h3>Company Name</h3>
+<p>Powerful women in Tech</p>
+<h3>Address</h3>
+<p>Isreal, Haifa</p>
+<p>Tamra , 0038110</p>
+<h3>Phone Number</h3>
+<p>Phone: (+972) 52-5787713</p>
+<h3>Email</h3>
+<p>Email: hadeelhassan186@gmail.com</p>
+<h3>Working Hours</h3>
+<p> 24/7 </p>
+<h3>Contact Form</h3>
+<form  action="/contact" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+    </div>
+
+
+</body>
+</html>

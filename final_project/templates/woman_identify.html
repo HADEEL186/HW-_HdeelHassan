@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+<style>
+      .toolbar {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+        @media (max-width: 800px) {
+        .toolbar {
+          flex-wrap: wrap;
+        }
+
+      .toolbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .logo {
+
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <title>Woman Information</title>
+</head>
+<body>
+<div class="toolbar">
+   <div><a href="/">
+    <img   src="../static/logo3.jpeg" alt="Web Logo" class="imglogo"/>
+    </a></div>
+      <div class="logo">Powerful women in Tech</div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+<div>
+<ul>
+    <img src="{{ url_for('display_image', filename=woman_specific.filename)}}">
+    <li>{{woman_specific.rate}}</li>
+    <li>{{woman_specific.name}}</li>
+    <li>{{woman_specific.position}}</li>
+    <li>{{woman_specific.company}}</li>
+    <li>{{woman_specific.country}}</li>
+    <li>{{woman_specific.birth_date}}</li>
+    <li>{{woman_specific.about}}</li>
+    </div>
+
+</ul>
+<form method="post" action="/add_review">
+    <label>name</label>
+    <input type="text" name="name" required>
+    <label>review</label>
+    <textarea type="text" name="review_text"></textarea>
+    <input type="hidden" name="woman_id" value="{{woman_specific.id}}">
+    <button type="submit">ADD</button>
+</form>
+<ol>
+    {% for review in reviews_specific %}
+    <li>{{review.name}}</li>
+    <li>{{review.review_text}}</li>
+    {%endfor%}
+</ol>
+<a href="/delete/{{woman_specific.id}}" type="button">Delete</a>
+<a href="/alter_info/{{woman_specific.id}}" type="button">UPDATE</a>
+</body>
+</html>

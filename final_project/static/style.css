@@ -1,0 +1,100 @@
+title{
+  width: 80%;
+  margin: 1px auto;
+  text-align: center;
+}
+ img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 200px;
+  box-shadow: 2px 2px 10px #ccc;
+}
+body {
+    background-color: white;
+    background-image: url('../static/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+img{
+    width: 300px;
+    height: 200px;
+    border-radius: 200px;
+    box-shadow: 2px 2px 5px #888888;
+}
+button {
+  background-color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+    color: white;
+}
+div {
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    margin:  1px;
+}
+#logo-row img {
+  width: 200px;
+  height: 100px;
+  align-items: center;
+}
+#myDiv {
+  border-top: 2px solid red;
+  border-right: 2px solid blue;
+  border-bottom: 2px solid green;
+  border-left: 2px solid yellow;
+}
+toolbar {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      button {
+        background-color: black;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        }
+
+
+      .toolbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .logo {
+
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+      }
+h2 {
+  margin-top: 1px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+form {
+  margin-top: 1px;
+  padding: 20px;
+}
+ .imglogo {
+
+    width: 220px;
+    height: 70px;
+}
+familydiv {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+
+}

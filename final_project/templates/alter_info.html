@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <style>
+      .toolbar {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      .toolbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .logo {
+
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+
+    <meta charset="UTF-8">
+    <title>Update Information</title>
+</head>
+<body>
+<div class="toolbar">
+   <div><a href="/">
+    <img   src="../static/logo3.jpeg" alt="Web Logo" class="imglogo"/>
+    </a></div>
+      <div class="logo">Powerful women in Tech</div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="about_us">About</a>
+        <a href="contact">Contact</a>
+      </div>
+    </div>
+<form method="post" enctype="multipart/form-data">
+
+        <label>RATE</label>
+        <input type="integer" name="rate"><br><br>
+        <label>NAME</label>
+        <input type="text" name="name" ><br><br>
+        <label>POSITION</label>
+        <input type="text" name="position" ><br><br>
+        <label>COMPANY</label>
+        <input type="text" name="company" ><br><br>
+        <label>COUNTRY</label>
+        <input type="text" name="country"><br><br>
+        <label>BIRTH DATE</label>
+        <input type="text" name="birth_date"><br><br>
+        <label>ABOUT</label>
+        <textarea type="text" name="about"></textarea><br><br>
+        <button type="submit">UPDATE</button>
+    </form>
+
+</body>
+</html>
