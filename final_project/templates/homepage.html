@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <style>
+      .toolbar {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+        @media (max-width: 800px) {
+        .toolbar {
+          flex-wrap: wrap;
+        }
+
+      .toolbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .logo {
+
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+      }
+    </style>
+
+    <div id="logo-row">
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+    </div>
+    <title>Powerful women in Tech</title>
+  </head>
+  <body>
+    <div class="toolbar">
+   <div><a href="/">
+    <img   src="static/logo3.jpeg"; alt="Web Logo"; class="imglogo"/>
+    </a></div>
+      <div class="logo">Powerful women in Tech</div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="about_us">About</a>
+        <a href="contact">Contact Us</a>
+
+      </div>
+    </div>
+
+        <h1 style="font-size: 36px;color: #A16DC5;text-align: center;">
+            WOMEN ARE THE ARCHITECTS OF SOCIETY"
+        </h1><br><br>
+
+        <h2><br>
+            I searched for most powerful women in tech in Google, Wikipedia, tech websites, and other public sources.<br>
+            The one thing that unites them all is their passion and resolve to make a difference in the tech world.
+        </h2>
+
+
+        <p>
+            We’re always looking for new pwoerful WOMAN to inspire us:
+            <a href="add_profile">ADD NEW MEMMBER</a>
+        </p><br>
+
+        {% for woman in women_info %}
+            <a href="{{url_for('woman_identify',woman_id=woman.id)}}"> <img src="{{ url_for('display_image', filename=woman.filename)}}"></a>
+        {%endfor%}
+
+
+  </body>
+</html>
