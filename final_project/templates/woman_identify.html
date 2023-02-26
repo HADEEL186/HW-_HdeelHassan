@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+<style>
+      .toolbar {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+        @media (max-width: 800px) {
+        .toolbar {
+          flex-wrap: wrap;
+        }
+
+      .toolbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .logo {
+
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+      }
+input[type="text"] {
+  height: 35px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: #A16DC5;
+  color: white;
+  border: 1px solid black;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+form {
+  display: inline-block;
+  margin-left: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label, input[type="text"], textarea {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  margin-left: auto;
+  margin-top: 10px;
+}
+ .reviews-left {
+    float: left;
+  }
+    </style>
+    <meta charset="UTF-8">
+    <title>Woman Information</title>
+</head>
+<body>
+<div class="toolbar">
+   <div><a href="/">
+    <img   src="../static/logo3.jpeg" alt="Web Logo" class="toolbar.logo"/>
+    </a></div>
+      <div class="logo">Powerful women in Tech</div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="about_us">About</a>
+        <a href="contact">Contact Us</a>
+      </div>
+    </div>
+<div class="ul">
+    <ul>
+<div class="container">
+  <div class="image">
+    <img src="{{ url_for('display_image', filename=woman_specific.filename)}}">
+  </div>
+  <div class="data">
+     <h2>Top:</h2>
+    <p>{{woman_specific.rate}}</p><br>
+    <h2>Name:</h2>
+    <h2 style="color: #A16DC5;">{{woman_specific.name}}</h2><br>
+    <h2>Position:</h2>
+    <p>{{woman_specific.position}}</p><br>
+    <h2>Company:</h2>
+    <p>{{woman_specific.company}}</p><br>
+    <h2>Country:</h2>
+    <p>{{woman_specific.country}}</p><br>
+    <h2>Birthday:</h2>
+    <p>{{woman_specific.birth_date}}</p><br>
+    <h2>About:</h2>
+    <p>{{woman_specific.about}}</p><br>
+</div>
+</div>
+    </ul>
+</div>
+</div>
+<form method="post" action="/add_review">
+    <label>name</label>
+    <textarea type="text" name="name" placeholder="Enter your name" required></textarea>
+    <label>review</label>
+    <textarea type="text" name="review_text" placeholder="Enter your review"></textarea>
+    <input type="hidden" name="woman_id" value="{{woman_specific.id}}">
+    <button type="submit">ADD</button>
+</form></div>
+
+<div class="reviews-left">
+  <ol>
+    {% for review in reviews_specific %}
+    <li><p>Name:<br>
+    {{review.name}}<br></p></li>
+    <p>Review:<br>
+    {{review.review_text}}</p>
+    {%endfor%}
+  </ol>
+</div>
+<div class="form-buttons">
+  <a href="/delete/{{woman_specific.id}}" class="form-button">Delete</a>
+  <a href="/alter_info/{{woman_specific.id}}" class="form-button">UPDATE</a>
+</div>
+
+   <footer>
+       <hr style=" border: 3px solid black;width: 100%;">
+      <p>Copyright © 2023 Hadeel Hassan</p>
+    </footer>
+
+</body>
+</html>

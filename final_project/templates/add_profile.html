@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+          <style>
+      .toolbar {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      .toolbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .logo {
+
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <meta charset="UTF-8">
+    <title>Woman Data Information </title>
+</head>
+<body>
+<div class="toolbar">
+   <div><a href="/">
+    <img   src="static/logo3.jpeg" alt="Web Logo"; class="imglogo"/>
+    </a></div>
+      <div class="logo">Powerful women in Tech</div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="about_us">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+ <center>
+  <div class="tools">
+    <form action="/add" method="post" enctype="multipart/form-data">
+        <dl>
+
+            <h2> NEW MEMBER </h2><br><br>
+
+                <input type="file" name="filename" required>
+
+        </dl>
+        <label>RATE</label><br>
+        <input type="integer" name="rate" placeholder="Enter woman's rate" required><br><br>
+        <label>NAME</label><br>
+        <input type="text" name="name" placeholder="Enter woman's name" required><br><br>
+        <label>POSITION</label><br>
+        <input type="text" name="position" placeholder="Enter woman's position" required><br><br>
+        <label>COMPANY</label><br>
+        <input type="text" name="company" placeholder="Enter woman's company" required><br><br>
+        <label>COUNTRY</label><br>
+        <input type="text" name="country" placeholder="Enter woman's country" required><br><br>
+        <label>BIRTH DATE</label><br>
+        <input type="text" name="birth_date" placeholder="Enter woman's birthday" required><br><br>
+        <label>ABOUT</label><br>
+        <textarea type="text" name="about" placeholder="Enter information" required></textarea><br><br>
+        <button type="submit">ADD</button>
+
+    </form>
+       </center>
+</div>
+   <footer>
+       <hr style=" border: 3px solid black;width: 100%;">
+      <p>Copyright © 2023 Hadeel Hassan</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <style>
+      .toolbar {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      .toolbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .logo {
+
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+
+    <meta charset="UTF-8">
+    <title>Update Information</title>
+</head>
+<body>
+<center>
+<div class="toolbar">
+   <div><a href="/">
+    <img   src="../static/logo3.jpeg" alt="Web Logo" class="imglogo"/>
+    </a></div>
+      <div class="logo">Powerful women in Tech</div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="about_us">About</a>
+        <a href="contact">Contact</a>
+      </div>
+    </div>
+    <div class="tools">
+<form method="post" enctype="multipart/form-data">
+        <dl>
+        <h1><labe>Update Information</labe></h1>
+          <input type="file" name="filename">
+</dl>
+        <label>RATE</label>
+        <input type="integer" name="rate" placeholder="Enter woman's rate"><br><br>
+        <label>NAME</label>
+        <input type="text" name="name" placeholder="Enter woman's name"><br><br>
+        <label>POSITION</label>
+        <input type="text" name="position" placeholder="Enter woman's position"><br><br>
+        <label>COMPANY</label>
+        <input type="text" name="company" placeholder="Enter woman's company"><br><br>
+        <label>COUNTRY</label>
+        <input type="text" name="country" placeholder="Enter woman's country"><br><br>
+        <label>BIRTH DATE</label>
+        <input type="text" name="birth_date" placeholder="Enter woman's birthday"><br><br>
+        <label>ABOUT</label>
+        <textarea type="text" name="about" placeholder="Enter information"></textarea><br><br>
+        <button type="submit">UPDATE</button>
+    </form>
+    </div>
+   <footer>
+       <hr style=" border: 3px solid black;width: 100%;">
+      <p>Copyright © 2023 Hadeel Hassan</p>
+    </footer>
+
+</center>
+</body>
+</html>

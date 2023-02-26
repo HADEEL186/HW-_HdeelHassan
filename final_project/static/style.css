@@ -1,0 +1,232 @@
+title{
+  width: 80%;
+  margin: 1px auto;
+  text-align: center;
+}
+ img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 200px;
+  box-shadow: 2px 2px 10px #ccc;
+}
+body {
+    background-color: white;
+    background-image: url('../static/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+button {
+  background-color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+    color: white;
+}
+div {
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    margin:  1px;
+}
+#logo-row img {
+  width: 200px;
+  height: 100px;
+  align-items: center;
+}
+#myDiv {
+  border-top: 2px solid red;
+  border-right: 2px solid blue;
+  border-bottom: 2px solid green;
+  border-left: 2px solid yellow;
+}
+toolbar {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      button {
+        background-color: black;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        }
+
+
+      .toolbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .logo {
+
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+      }
+h2 {
+  margin-top: 1px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+form {
+  margin-top: 1px;
+  padding: 20px;
+}
+ .img logo {
+
+    width: 120px;
+    height: 70px;
+}
+
+
+    footer {
+      background-color: lightgray;
+      text-align: center;
+      padding: 10px;
+    }
+container{
+		width: 90%;
+		padding: 10px;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+}
+
+.box{
+     border-radius: 200px;
+	width: 250px;
+	margin: 0 10px;
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+	transition: 1s}
+
+.box:hover{
+	transform: scale(1.3);
+	z-index: 2;
+}
+
+.box img{
+	display: block;
+	width:100%;
+	border-radius: 2px;‏
+	 border-radius: 200px;
+	}
+
+ul{
+.ul{
+
+margin 8px}
+
+.p{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+
+}}
+tools{
+  form {
+    display: inline-block;
+    margin: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="file"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+}
+input[type="text"] {
+  height: 35px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: #A16DC5;
+  color: white;
+  border: 1px solid black;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+form {
+  display: inline-block;
+  margin-left: 10px;
+}
+.new-member-button {
+background-color: black;
+color: white;
+padding: 5px 10px;
+border-radius: 50px;
+border: none;
+font-size: 14px;
+cursor: pointer;
+}
+ .form-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .form-button {
+    background-color: #A16DC5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  p {
+
+    font-weight: bold;
+}
+.container {
+  display: flex;
+}
+
+.image {
+  width: 50%;
+}
+
+.data {
+  width: 70%;
+}
