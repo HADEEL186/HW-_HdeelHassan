@@ -30,6 +30,14 @@ def allowed_file(filename):
 # object that will allow the application to interact with a database using SQLAlchemy's
 db = SQLAlchemy(app)
 
+# table stores user information
+class Admin(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    admin = db.Column(db.String, unique=False, nullable=False)
+    password = db.Column(db.String, unique=False, nullable=False)
+    def __repr__(self):
+        return f"Name:{self.admin}"
+
 # table stores information about "Women" submitted by visitors of the website.
 class Women(db.Model):
     id = db.Column(db.Integer, primary_key = True)
@@ -186,7 +194,7 @@ def contact_management():
         contact_row = Contact(name=name, email=email, message=message)
         db.session.add(contact_row)
         db.session.commit()
-        return render_template("contact.html")
+        return render_template('thank_you.html')
     else:
         return render_template("contact.html")
 
